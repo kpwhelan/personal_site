@@ -1,0 +1,391 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-- Tag Selectors --*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-color: #000;
+    margin-bottom: 30px;
+}
+
+main img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+textarea {
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*-- Class Selectors --*/
+
+.hamburger {
+    display: none;
+}
+
+.welcome-div {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+}
+
+.welcome-div section {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    text-align: center;
+    width: 50%;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.flex-item h2 {
+    text-decoration: underline;
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+.flex-item-img {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-item p {
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.5em;
+}
+
+.flex-item-icons {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.form-fields {
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.favicons {
+    padding:0;
+    text-align: center;
+    margin-top: 20px;
+}
+.favicons img{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin:5px;
+}
+
+.favicons a {
+    display: inline;
+}
+
+
+/*-- ID Selectors --*/
+
+#hamburger {
+    display: none;
+}
+
+#wider-h1 {
+    animation-duration: 2s;
+}
+
+#nav-list {
+    animation-duration: 2s;
+}
+
+#nav-list li {
+    display: inline;
+    padding-right: 5px;
+    border-radius: 5px;
+    border-right: 5px solid #fff;
+    border-bottom: solid #fff 2px;
+    margin-right: 5px;
+}
+
+#mobile-h1 {
+    display: none;
+}
+
+#h1-name {
+    font-size: 48px;
+    display: inline;
+    font-family: 'Kalam', cursive;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+#desktop-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#desktop-nav li {
+    font-size: 24px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#desktop-nav a, #desktop-nav a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+#desktop-nav a:active {
+    color: #ee2400;
+}
+
+#submit-button {
+    color: #fff;
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+#response-message {
+    margin-top: 20px;
+}
+
+#error-message {
+    color: #cb0b0b;
+}
+
+#up-arrow {
+    display: block;
+    margin: 0 auto 30px auto;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#message-bottle {
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 823px) {
+    .welcome-div {
+        padding-top: 100px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /*-- Tag Selectors --*/
+    #desktop-nav li {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: solid #fff 2px;
+    }
+
+
+    /*-- Class Selectors --*/
+
+    .welcome-div {
+        width: 100%;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+
+
+    /*-- ID Selectors --*/
+
+
+    #profile-picture {
+        order: 1;
+    }
+
+    #about {
+        order: 2;
+    }
+
+    #comp-coffee-pic {
+        order: 2;
+    }
+
+    #collaboration {
+        order: 4;
+    }
+
+    #skills-icons {
+        order: 5;
+    }
+
+    #skills {
+        order: 6;
+    }
+
+    #iphone-picture {
+        order: 7;
+    }
+
+    #philosophy {
+        order: 8;
+    }
+
+    #message-bottle {
+        order: 9;
+    }
+
+    #contact {
+        order: 10;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .welcome-div {
+        padding-top: 150px;
+    }
+
+    nav {
+        margin-left: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    #wider-h1 {
+        display: none;
+    }
+    
+    #mobile-h1 {
+        display: block;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 430px) {
+
+    .welcome-div {
+        padding-top: 300px;
+    }
+
+    #hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50px;
+        width: 40px;
+        margin: 5px 5px 0 0;
+        display: block;
+    }
+
+    #mobile-nav {
+        font-size: 24px;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-left: none;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 90px;
+        overflow: hidden;
+        width: 20px;
+        transition: all 1s ease-in-out;
+    }
+
+    #mobile-nav ul {
+        padding-top: 10px;
+    }
+
+    #mobile-nav ul li {
+       padding: 10px;
+       visibility: hidden;
+    }
+
+    #mobile-nav ul li a, #mobile-nav ul li a:visited {
+        text-decoration: none;
+        color: #fff;
+        white-space: nowrap;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #h1-name {
+        font-size: 36px;
+    }
+
+    #wider-h1 {
+        display: none;
+    }
+    
+    #mobile-h1 {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 1em;
+    }
+}
+
